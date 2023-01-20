@@ -1,5 +1,5 @@
 ---
-- name: install nginx
+- name: install webserver
   apt: 
    name: apache2
    state: present 
