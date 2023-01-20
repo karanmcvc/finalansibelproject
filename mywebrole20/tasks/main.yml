@@ -1,2 +1,6 @@
----
-# tasks file for mywebrole20
+--- 
+- name: install nginx
+  apt: 
+   name: apache2
+   state: present 
+   
