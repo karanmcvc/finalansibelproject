@@ -6,4 +6,4 @@
 - name: i want to install java 8
   apt: 
     name: default-jdk 
-    state: presnet 
+    state: present 
