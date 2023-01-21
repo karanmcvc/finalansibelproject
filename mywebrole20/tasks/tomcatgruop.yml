@@ -4,11 +4,11 @@
     state: present 
 
 
-- name: addtomcat user
+- name: create tomcat user
   user:
      name: tomcat
      shell: /bin/false
-     gruop: tomcat 
+     group: tomcat 
      home: /opt/tomcat
      state: present 
    
