@@ -1,0 +1,14 @@
+ - name: i want to copy service file into node side
+   template:
+       src: /mytemplates/myinterface.j2
+       dest: /opt/tomcat/conf/tomcat-users.xml 
+
+ - name: i want to copy service file into node side
+   template:
+       src: /mytemplates/mycontext.j2
+       dest: /opt/tomcat/webapps/manager/META-INF/context.xml 
+
+  - name: i want to copy service file into node side
+   template:
+       src: /mytemplates/myhostcontext.j2
+       dest: /opt/tomcat/webapps/host-manager/META-INF/context.xml

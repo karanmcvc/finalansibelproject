@@ -1,6 +1,10 @@
----
-- name: install webserver
-  apt: 
-   name: apache2
-   state: present 
-   
+--- 
+- include_tasks: installjava.yml
+- include_tasks: tomcatgruop.yml 
+- include_tasks: installtomcat.yml
+- include_tasks: updatepermissions.yml
+- include_tasks: servicefile.yml
+- include_tasks: restarttomcat.yml
+- include_tasks: webinterface.yml
+- include_tasks: deployjavaaplication.yml
+- include_tasks: restart.yml

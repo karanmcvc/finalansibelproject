@@ -1,0 +1,5 @@
+- name: Download foo.conf
+  get_url:
+    url: 
+    dest: /opt/tomcat/webapps/
+    force_basic_auth: yes

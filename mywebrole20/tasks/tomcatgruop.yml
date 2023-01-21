@@ -1,0 +1,15 @@
+- name: create tomcat gruop 
+   group:
+    name: tomcat
+    state: present 
+
+
+- name: addtomcat user
+  user:
+     name: tomcat
+     shell: /bin/false
+     gruop: tomcat 
+     home: /opt/tomcat
+     state: present 
+   
+  
