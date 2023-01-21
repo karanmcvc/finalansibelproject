@@ -11,5 +11,5 @@
 
 - name: i want to extract tar file 
   command: 
-      cmd: tar xzvf /home/ubuntu/apache-tomcat-9.0.71.tar.gz -C /opt/tomcat --strip-components=1
+      cmd: sudo tar xzvf /home/ubuntu/apache-tomcat-9.0.71.tar.gz -C /opt/tomcat --strip-components=1
       creates: /opt/tomcat/LICENCE
