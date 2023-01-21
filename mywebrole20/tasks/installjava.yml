@@ -1,9 +1,9 @@
-- name: installjava 
+- name: i want to update
   apt:
-   update_cache: yes 
+    update_cache: yes 
 
 
-- name: i want to install java  
+- name: i want to install java 8
   apt: 
-   name: default-jdk 
-   state: presnet 
+    name: default-jdk 
+    state: presnet 
